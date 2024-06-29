@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+    <title>Document</title>
 </head>
-<body>
-<!--Exercício1-->
 <script>
-    let cargo = "diretor";
-    switch (cargo) {
+
+    /*Exercício 1
+    let nota1 = Number(prompt("Digite a primeira nota:"))
+    let nota2 = Number(prompt("Digite a segunda nota:"))
+    let nota3 = Number(prompt("Digite a terceira nota:"))
+    let nota4 = Number(prompt("Digite a quarta nota:"))
+    let media = (nota1+nota2+nota3+nota4)/4
+    document.write(media)*/
+
+
+    let opcao = prompt("Qual a sua permissão?")
+    opcao = opcao.toLocaleLowerCase()
+    switch(opcao){
         case "gerente":
-            console.log(`Você tem permissão de ${cargo}`);
-            break;
-        case "comum":
-            console.log(`Você tem permissão de ${cargo}`);
+            document.write("Você tem permissão de gerente!")
             break;
         case "diretor":
-            console.log(`Você tem permissão de ${cargo}`);
+            document.write("Você tem permissão de diretor!")
+            break;
+        case "comum":
+            document.write("Você tem permissão de comum!")
             break;
         default:
-            console.log("Permissão Inválida!");
+            document.write("Você não tem permissão!")
     }
 </script>
+<body>
+
 </body>
 </html>
